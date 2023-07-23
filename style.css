@@ -1,52 +1,83 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
-ul li{
-    text-transform: capitalize;
-    /* background-color: coral; */
-    width: fit-content;
-   margin: 0 30px;
-   padding: 10px;
-   margin-top: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  /* width: 25%; */
+  /* text-align: center; */
+  background: linear-gradient(to right, rgb(154, 208, 208), rgb(202, 229, 229));
 }
-#input{
-    padding: 5px;
+
+#main {
+  border-radius: 10px;
+  background-color: blanchedalmond;
+  margin: 200px auto;
+  padding: 15px 30px 30px 15px;
+  width: fit-content;
+  border-top: 2px solid #2cef5aa0;
+  border-bottom: 2px solid #2ceded;
+  border-left: 2px solid #ff8c00;
+  border-right: 2px solid #eb2424;
 }
-h1{
-    padding: 10px;
-    text-transform: uppercase;
-    
+
+.form {
+  display: flex;
+  gap: 5px;
 }
-#button{
-    border-radius: 10px;
-background-color: crimson;
-color: white;
-padding: 5px;
+
+.form > input[type="text"] {
+  border-radius: 4px;
+  border: 1px solid #9b9898;
+  padding: 5px;
 }
-body{
-    /* width: 25%; */
-    text-align: center;
-    /* background-color: darkblue; */
-    
+
+ul li {
+  text-transform: capitalize;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font: 1em sans-serif;
+  list-style: none;
 }
-#main{
-    background-color: blanchedalmond;
-    margin: 200px auto;
-    padding: 15px;
-    width: fit-content;
-    border-top: 2px solid rgba(44, 239, 90, 0.628);
-    border-bottom: 2px solid rgb(44, 237, 237);
-    border-left: 2px solid darkorange;
-    border-right: 2px solid rgb(235, 36, 36);
+
+ul li:hover {
+  cursor: default;
+  background-color: #a5a2a2;
 }
-  
-  @media only screen and (max-width:768px){
-    #main{background-color: powderblue};
-    /* .button{background-color: black; color: white;}    */
+
+h1 {
+  padding: 10px;
+  text-transform: uppercase;
 }
-@media only screen and (max-width:600px){
-      /* .form{display: flex; flex-direction: column; }; */
-      #button{ background-color: greenyellow; color: rgb(1, 11, 20);}
-    #main{background-color: hotpink;}
-    h1{color: rgba(83, 60, 22, 0.639);}
-    
-  } 
+
+#button {
+  border-radius: 10px;
+  background-color: crimson;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  #main {
+    background-color: powderblue;
+  }
+  /* .button{background-color: black; color: white;}    */
+}
+
+@media only screen and (max-width: 600px) {
+  /* .form{display: flex; flex-direction: column; }; */
+  #button {
+    background-color: greenyellow;
+    color: #010b14;
+  }
+  #main {
+    background-color: hotpink;
+  }
+  h1 {
+    color: #533c16a3;
+  }
+}
